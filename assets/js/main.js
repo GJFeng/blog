@@ -7,6 +7,7 @@ $(function () {
         menuWidth: 260, // Default is 240
         closeOnClick: true //
     });
+    $('.dropdown-trigger').dropdown();
 
 
     var dataBgUrl = document.getElementsByClassName("sidebar")[0].dataset.image;
