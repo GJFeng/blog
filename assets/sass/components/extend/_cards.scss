@@ -1,0 +1,11 @@
+.card {
+    &.narrower{
+        display: inline-block;
+        .card-image{
+          margin: -20px 15px 0;
+          img{
+            border-radius: 4px;
+          }
+        }
+      }
+}

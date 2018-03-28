@@ -1,0 +1,40 @@
+#writer {
+    float: left;
+    width: calc(100% - 220px);
+    height: 100%; // position: relative;
+    overflow: hidden;
+}
+
+.editormd {
+    border: none;
+    .divider {
+        background-color: transparent;
+        overflow: initial;
+    }
+    .CodeMirror-dialog {
+        input {
+            margin: 0;
+            height: auto;
+            border: none;
+            background: none;
+        }
+    }
+    &.editormd-fullscreen {
+        z-index: 1000;
+    }
+    .editormd-form {
+        input {
+            height: auto;
+            font-size: 12px;
+            margin: 0;
+            webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        [type="radio"]:not(:checked), [type="radio"]:checked{
+            position: static;
+            opacity: 1;
+        }
+    }
+}

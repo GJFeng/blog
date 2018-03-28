@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/bower_components/perfect-scrollbar/css/perfect-scrollbar.css">
+    <!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/bower_components/editor.md/css/editormd.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="perfect-scrollbar">
+
+    <div class="wrapper">
+        <aside class="sidebar fixed " id="slide-out" data-active-color="red" data-background-color="black" data-image="/assets/img/sidebar-2.jpg">
+            <div class="logo">
+                <a href="javascript:;">
+                    Pro
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="user">
+                    <div class="photo">
+                        <img src="/assets/img/sample-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span>Pro</span>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-fasong2  small"></i>
+                            <p>列表</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-fasong2  small"></i>
+                            <p>列表</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class=" iconfont icon-fasong2 small"></i>
+                            <p>列表</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="siderbar-bg"></div>
+        </aside>
+        <div class="main clearfix">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only">
+                展开
+            </a>
+            <div class="notes-list">
+                <div class="new-note">
+                    <a href="">
+                        <i>+</i>
+                        <span>新建文章</span>
+                    </a>
+                </div>
+                <ul class="notes">
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="writer">
+                <div id="my-editormd">
+                    <textarea id="my-editormd-markdown-doc" name="my-editormd-markdown-doc" style="display:none;"></textarea>
+                    <textarea id="my-editormd-html-code" name="my-editormd-html-code" style="display:none;"></textarea>
+                </div>
+
+            </div>
+            <footer>
+                <div class=""></div>
+
+            </footer>
+        </div>
+
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="/bower_components/materialize/dist/js/materialize.min.js"></script>
+<script src="/bower_components/editor.md/editormd.min.js"></script>
+<script src="/bower_components/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</html>
