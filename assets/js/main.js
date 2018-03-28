@@ -2,16 +2,10 @@ $(function () {
 
     new PerfectScrollbar(".sidebar-wrapper");
     new PerfectScrollbar(".notes");
-    // new PerfectScrollbar(".perfect-scrollbar");
-    $(".button-collapse").sideNav({
-        menuWidth: 260, // Default is 240
-        closeOnClick: true //
-    });
+    $(".sidenav").sidenav();
     $('.dropdown-trigger').dropdown();
-
-
     var dataBgUrl = document.getElementsByClassName("sidebar")[0].dataset.image;
-    var sideBg = document.getElementsByClassName("siderbar-bg")[0]
+    var sideBg = document.getElementsByClassName("siderbar-bg")[0];
     sideBg.style.backgroundImage = "url(" + dataBgUrl + ")";
 
 
@@ -19,7 +13,7 @@ $(function () {
         width: "100%",
         height: '100%',
         syncScrolling: "single",
-        path: "/bower_components/editor.md/lib/", //注意2：你的路径
+        path: "/node_modules/editor.md/lib/", //注意2：你的路径
         saveHTMLToTextarea: true, //注意3：这个配置，方便post提交表单
         
         toolbarIcons: function () {

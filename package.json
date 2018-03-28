@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "editor.md": "^1.5.0",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-beta",
+    "perfect-scrollbar": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJFeng/blog.git"
+  },
+  "author": "GJFeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GJFeng/blog/issues"
+  },
+  "homepage": "https://github.com/GJFeng/blog#readme"
+}

@@ -9,7 +9,9 @@
 }
 
 .sidebar {
-    position: fixed;
+    width: 260px;
+    
+   /*  position: fixed;
     width: 300px;
     left: 0;
     top: 0;
@@ -25,7 +27,7 @@
     will-change: transform;
     backface-visibility: hidden;
     transform: translateX(-105%);
-    @extend %side-box-shadow;
+    @extend %side-box-shadow; */
     
     &:before {
         display: block;
