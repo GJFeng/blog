@@ -75,32 +75,27 @@
                                 <span>3000</span>
                             </p>
                         </a>
-                        <a class='dropdown-trigger ' href='#' data-target='settings'><i class="material-icons">settings</i></a>
-                        <ul id='settings' class='dropdown-content'>
-                            <li>
-                                <a href="#!">one</a>
-                            </li>
-                            <li>
-                                <a href="#!">two</a>
+                        <a class='dropdown-trigger ' href='#' data-target='note-settings' ><i class="material-icons" >settings</i></a>
+                        <ul id='note-settings' class='dropdown-content'  >
+                            <li class="note-remove">
+                                <a href="#!"><i class="material-icons">keyboard_arrow_left</i>移动文章</a>
+                                <ul >
+                                    <li>
+                                        <a href="javascript:;">列表</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="divider" tabindex="-1"></li>
-                            <li>
-                                <a href="#!">three</a>
+                            <li class="note-del">
+                                <a href="#!" ><i class="material-icons">delete</i>删除文章</a>
                             </li>
-                            <li>
-                                <a href="#!">
-                                    <i class="material-icons">view_module</i>four</a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <i class="material-icons">cloud</i>five</a>
-                            </li>
+                           
                         </ul>
                     </li>
                 </ul>
             </div>
             <div id="writer">
-                <div id="my-editormd">
+                <div id="my-editormd" >
                     <textarea id="my-editormd-markdown-doc" name="my-editormd-markdown-doc" style="display:none;"></textarea>
                     <textarea id="my-editormd-html-code" name="my-editormd-html-code" style="display:none;"></textarea>
                 </div>

@@ -3,7 +3,12 @@ $(function () {
     new PerfectScrollbar(".sidebar-wrapper");
     new PerfectScrollbar(".notes");
     $(".sidenav").sidenav();
-    $('.dropdown-trigger').dropdown();
+    $('.dropdown-trigger').dropdown({
+        alignment:'right',
+        constrainWidth:false,
+        // coverTrigger:false
+    
+    });
     var dataBgUrl = document.getElementsByClassName("sidebar")[0].dataset.image;
     var sideBg = document.getElementsByClassName("siderbar-bg")[0];
     sideBg.style.backgroundImage = "url(" + dataBgUrl + ")";

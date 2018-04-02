@@ -10,6 +10,9 @@ a {
 a:hover {
   text-decoration: none; }
 
+a:focus {
+  outline: none; }
+
 .main {
   padding-left: 260px; }
 
@@ -19,22 +22,22 @@ a:hover {
 .sidebar {
   width: 260px;
   /*  position: fixed;
-   width: 300px;
-   left: 0;
-   top: 0;
-   margin: 0;
-   transform: translateX(-100%);
-   height: 100%;
-   height: calc(100% + 60px);
-   height: -moz-calc(100%);
-   padding-bottom: 60px;
-   background-color: #fff;
-   z-index: 999;
-   overflow-y: auto;
-   will-change: transform;
-   backface-visibility: hidden;
-   transform: translateX(-105%);
-   @extend %side-box-shadow; */ }
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateX(-105%);
+  @extend %side-box-shadow; */ }
   .sidebar:before {
     display: block;
     content: "";
@@ -179,20 +182,41 @@ a:hover {
     position: relative;
     padding-bottom: 30px; }
   .notes-list .note-info {
-    border-bottom: 1px solid #D9D9D9; }
+    border-bottom: 1px solid #D9D9D9;
+    position: relative; }
     .notes-list .note-info > a {
       display: block;
       padding: 15px 30px; }
       .notes-list .note-info > a > p {
         margin: 0; }
       .notes-list .note-info > a .note-title {
-        font-size: 18px; }
+        font-size: 18px;
+        padding-right: 6px; }
       .notes-list .note-info > a .note-abb {
         font-size: 12px;
         transform: translateY(2px); }
       .notes-list .note-info > a .word-count {
         font-size: 12px;
         transform: translateY(10px) translateX(-15px); }
+    .notes-list .note-info .dropdown-trigger {
+      position: absolute;
+      right: 8px;
+      top: 17px;
+      padding: 0;
+      font-size: 0; }
+    .notes-list .note-info .dropdown-content li > a {
+      padding: 14px 0;
+      margin: 0 10px;
+      font-size: 14px; }
+      .notes-list .note-info .dropdown-content li > a > i {
+        margin-right: 5px; }
+    .notes-list .note-info .note-remove {
+      position: relative; }
+      .notes-list .note-info .note-remove ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-100%); }
 
 .sidebar .logo:after, .sidebar .user:after {
   content: '';
@@ -229,9 +253,14 @@ a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 4px; }
-  .editormd .editormd-form [type="radio"]:not(:checked), .editormd .editormd-form [type="radio"]:checked {
+  .editormd .editormd-form [type="radio"]:not(:checked),
+  .editormd .editormd-form [type="radio"]:checked {
     position: static;
     opacity: 1; }
+  .editormd ul {
+    list-style-type: disc; }
+    .editormd ul > li {
+      list-style-type: disc; }
 
 .sidebar .user .photo {
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }

@@ -32,9 +32,16 @@
             box-sizing: border-box;
             border-radius: 4px;
         }
-        [type="radio"]:not(:checked), [type="radio"]:checked{
+        [type="radio"]:not(:checked),
+        [type="radio"]:checked {
             position: static;
             opacity: 1;
+        }
+    }
+    ul {
+        list-style-type: disc;
+        &>li {
+            list-style-type: disc;
         }
     }
 }
