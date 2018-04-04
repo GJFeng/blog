@@ -1,10 +1,10 @@
 // @charset "UTF-8";
 
-
+@import "components/variables";
 @import "components/base";
 @import "components/sidebar";
 @import "components/writer";
-@import "components/variables";
+@import "components/plugin";
 
 //extend
 @import "components/extend/cards";

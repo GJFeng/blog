@@ -67,6 +67,43 @@
                     </a>
                 </div>
                 <ul class="notes">
+                    <li class="note-info active">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                        <a class='dropdown-trigger ' href='#' data-target='note-settings1'>
+                            <i class="material-icons">settings</i>
+                        </a>
+                        <ul id='note-settings1' class='dropdown-content'>
+                            <li class="note-move">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li class="note-del">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">delete</i>删除文章</a>
+                            </li>
+
+                        </ul>
+                    </li>
                     <li class="note-info">
                         <a href="javascript:;">
                             <p class="note-title">文章标题</p>
@@ -75,27 +112,40 @@
                                 <span>3000</span>
                             </p>
                         </a>
-                        <a class='dropdown-trigger ' href='#' data-target='note-settings' ><i class="material-icons" >settings</i></a>
-                        <ul id='note-settings' class='dropdown-content'  >
-                            <li class="note-remove">
-                                <a href="#!"><i class="material-icons">keyboard_arrow_left</i>移动文章</a>
-                                <ul >
+                        <a class='dropdown-trigger ' href='#' data-target='note-settings'>
+                            <i class="material-icons">settings</i>
+                        </a>
+                        <ul id='note-settings' class='dropdown-content'>
+                            <li class="note-move">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
+                                <ul>
                                     <li>
-                                        <a href="javascript:;">列表</a>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="divider" tabindex="-1"></li>
                             <li class="note-del">
-                                <a href="#!" ><i class="material-icons">delete</i>删除文章</a>
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">delete</i>删除文章</a>
                             </li>
-                           
+
                         </ul>
                     </li>
+
                 </ul>
             </div>
             <div id="writer">
-                <div id="my-editormd" >
+                <div id="my-editormd">
                     <textarea id="my-editormd-markdown-doc" name="my-editormd-markdown-doc" style="display:none;"></textarea>
                     <textarea id="my-editormd-html-code" name="my-editormd-html-code" style="display:none;"></textarea>
                 </div>
@@ -106,7 +156,142 @@
 
             </footer>
         </div>
+    </div>
+    <div class="fixed-plugin">
+        <div class="dropdown show-dropdown" data-target="fixed-plugin">
+            <a href="#">
+                <i class="fa fa-cog fa-2x"> </i>
+            </a>
+            <div class="dropdown-content" id="fixed-plugin">
+                <div class="header-title">Sidebar Filters</div>
+                <div class="adjustments-line">
+                    <ul class="switch-trigger active-color">
+                        <li class="badge filter badge-purple" data-color="purple"></li>
+                        <li class="badge filter badge-blue" data-color="blue"></li>
+                        <li class="badge filter badge-green" data-color="green"></li>
+                        <li class="badge filter badge-orange" data-color="orange"></li>
+                        <li class="badge filter badge-red" data-color="red"></li>
+                        <li class="badge filter badge-rose active" data-color="rose"></li>
+                    </ul>
+                </div>
+                <div class="header-title">Sidebar Background</div>
+                <div class="adjustments-line">
+                    <ul class="switch-trigger background-color">
+                        <li class="badge filter badge-white" data-color="white"></li>
+                        <li class="badge filter badge-black active" data-color="black"></li>
+                    </ul>
+                </div>
+                <div class="adjustments-line">
+                    <div class="switch-trigger">
+                        <p>Sidebar Mini</p>
+                        <div class="togglebutton switch-sidebar-mini">
+                            <label>
+                                <input type="checkbox" unchecked="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="adjustments-line">
+                    <div class="switch-trigger">
+                        <p>Sidebar Image</p>
+                        <div class="togglebutton switch-sidebar-image">
+                            <label>
+                                <input type="checkbox" checked="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-title">Images</div>
+                <div class="adjustments-line">
+                    <ul class="switch-trigger img-holder">
+                        <li class="active">
+                            <img src="/assets/img/sidebar-1.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="/assets/img/sidebar-2.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="/assets/img/sidebar-3.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="/assets/img/sidebar-4.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           <!--  <ul>
+                <li class="header-title">Sidebar Filters
+                    < </li>
+                        <li class="adjustments-line">
+                            <a href="javascript:void(0)" class="switch-trigger active-color">
+                                <div class="badge-colors text-center">
+                                    <span class="badge filter badge-purple" data-color="purple"></span>
+                                    <span class="badge filter badge-blue" data-color="blue"></span>
+                                    <span class="badge filter badge-green" data-color="green"></span>
+                                    <span class="badge filter badge-orange" data-color="orange"></span>
+                                    <span class="badge filter badge-red" data-color="red"></span>
+                                    <span class="badge filter badge-rose active" data-color="rose"></span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li class="header-title">Sidebar Background</li>
+                        <li class="adjustments-line">
+                            <a href="javascript:void(0)" class="switch-trigger background-color">
+                                <div class="text-center">
+                                    <span class="badge filter badge-white" data-color="white"></span>
+                                    <span class="badge filter badge-black active" data-color="black"></span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li class="adjustments-line">
+                            <a href="javascript:void(0)" class="switch-trigger">
+                                <p>Sidebar Mini</p>
+                                <div class="togglebutton switch-sidebar-mini">
+                                    <label>
+                                        <input type="checkbox" unchecked="">
+                                    </label>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li class="adjustments-line">
+                            <a href="javascript:void(0)" class="switch-trigger">
+                                <p>Sidebar Image</p>
+                                <div class="togglebutton switch-sidebar-image">
+                                    <label>
+                                        <input type="checkbox" checked="">
+                                    </label>
+                                </div>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li class="header-title">Images</li>
+                        <li class="active">
+                            <a class="img-holder switch-trigger" href="javascript:void(0)">
+                                <img src="/assets/img/sidebar-1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-holder switch-trigger" href="javascript:void(0)">
+                                <img src="/assets/img/sidebar-2.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-holder switch-trigger" href="javascript:void(0)">
+                                <img src="/assets/img/sidebar-3.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-holder switch-trigger" href="javascript:void(0)">
+                                <img src="/assets/img/sidebar-4.jpg" alt="" />
+                            </a>
+                        </li>
 
+            </ul> -->
+        </div>
+    </div>
 </body>
 
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>

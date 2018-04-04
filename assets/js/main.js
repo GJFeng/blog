@@ -9,6 +9,11 @@ $(function () {
         // coverTrigger:false
     
     });
+    $('.show-dropdown').dropdown({
+        alignment:'right',
+        constrainWidth:false,
+    
+    });
     var dataBgUrl = document.getElementsByClassName("sidebar")[0].dataset.image;
     var sideBg = document.getElementsByClassName("siderbar-bg")[0];
     sideBg.style.backgroundImage = "url(" + dataBgUrl + ")";
