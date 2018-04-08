@@ -1,20 +1,27 @@
-html{
+html {
     font-weight: 300;
 }
-html,body,.wrapper,.main{
-    height:100%;
+
+html,
+body,
+.wrapper,
+.main {
+    height: 100%;
 }
-a{
-    color:#555
+
+a {
+    color: #555
 }
-a:hover{
-    text-decoration: none;
-    // color:#333;
+
+a:hover {
+    text-decoration: none; // color:#333;
 }
-a:focus{
-    outline:none;
+
+a:focus {
+    outline: none;
 }
-.sidebar{
+
+.sidebar {
     &[data-background-color="white"] {
         background-color: #fff;
         .logo,
@@ -67,42 +74,58 @@ a:focus{
     background-color: #e91e63;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
 }
+
 [data-active-color="red"] .nav li.active>a {
     background-color: #f44336;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
 }
+
 [data-active-color="orange"] .nav li.active>a {
     background-color: #ff9800;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
 }
+
 [data-active-color="green"] .nav li.active>a {
     background-color: #4caf50;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
 }
+
 [data-active-color="blue"] .nav li.active>a {
     background-color: #00bcd4;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
 }
+
 [data-active-color="purple"] .nav li.active>a {
     background-color: #9c27b0;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
-[data-active-color="rose"]+div.main .note-info.active:before{
+[data-active-color="rose"]+div.main .note-info.active:before {
     background-color: #e91e63;
 }
+
 [data-active-color="red"]+div.main .note-info.active:before {
     background-color: #f44336;
 }
+
 [data-active-color="orange"]+div.main .note-info.active:before {
     background-color: #ff9800;
 }
+
 [data-active-color="green"]+div.main .note-info.active:before {
     background-color: #4caf50;
 }
+
 [data-active-color="blue"]+div.main .note-info.active:before {
     background-color: #00bcd4;
 }
+
 [data-active-color="purple"]+div.main .note-info.active:before {
     background-color: #9c27b0;
 }
+
+.clearfix:after {
+    content:""; 
+    display: block; 
+    clear:both; 
+ }

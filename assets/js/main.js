@@ -2,16 +2,19 @@ $(function () {
 
     new PerfectScrollbar(".sidebar-wrapper");
     new PerfectScrollbar(".notes");
+    // new PerfectScrollbar("#fixed-plugin");
     $(".sidenav").sidenav();
     $('.dropdown-trigger').dropdown({
         alignment:'right',
         constrainWidth:false,
+
         // coverTrigger:false
     
     });
     $('.show-dropdown').dropdown({
         alignment:'right',
         constrainWidth:false,
+        // coverTrigger:false
     
     });
     var dataBgUrl = document.getElementsByClassName("sidebar")[0].dataset.image;
