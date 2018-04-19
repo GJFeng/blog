@@ -10,6 +10,7 @@
 
 .sidebar {
     width: 260px;
+    transition:background-color .3s;
     /*  position: fixed;
     width: 300px;
     left: 0;
@@ -138,7 +139,7 @@
             }
         }
     }
-    .siderbar-bg {
+    .sidebar-bg {
         position: absolute;
         z-index: 1;
         height: 100%;
@@ -155,7 +156,7 @@
             height: 100%;
             content: "";
             display: block;
-
+            transition:all .3s;
         }
     }
     .sidebar-sub {}

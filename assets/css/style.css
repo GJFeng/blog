@@ -16,7 +16,7 @@ a {
 a:hover {
   text-decoration: none; }
 
-a:focus {
+:focus {
   outline: none; }
 
 .sidebar[data-background-color="white"] {
@@ -29,11 +29,11 @@ a:focus {
     color: #3C4858; }
   .sidebar[data-background-color="white"] .user > .info > span {
     color: #3C4858; }
-  .sidebar[data-background-color="white"] .siderbar-bg:after {
+  .sidebar[data-background-color="white"] .sidebar-bg:after {
     background: #FFFFFF;
     opacity: .93; }
 .sidebar[data-background-color="black"] {
-  background-color: #191919; }
+  background-color: #000; }
   .sidebar[data-background-color="black"] .logo a,
   .sidebar[data-background-color="black"] .nav a {
     color: #fff; }
@@ -42,7 +42,7 @@ a:focus {
     color: #fff; }
   .sidebar[data-background-color="black"] .user > .info > span {
     color: #fff; }
-  .sidebar[data-background-color="black"] .siderbar-bg:after {
+  .sidebar[data-background-color="black"] .sidebar-bg:after {
     background: #000;
     opacity: .8; }
 
@@ -101,6 +101,7 @@ a:focus {
     padding-left: 0; } }
 .sidebar {
   width: 260px;
+  transition: background-color .3s;
   /*  position: fixed;
   width: 300px;
   left: 0;
@@ -193,7 +194,7 @@ a:focus {
       line-height: 30px;
       font-size: 14px;
       white-space: nowrap; }
-  .sidebar .siderbar-bg {
+  .sidebar .sidebar-bg {
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -203,13 +204,14 @@ a:focus {
     left: 0;
     background-size: cover;
     background-position: center center; }
-    .sidebar .siderbar-bg:after {
+    .sidebar .sidebar-bg:after {
       position: absolute;
       z-index: 3;
       width: 100%;
       height: 100%;
       content: "";
-      display: block; }
+      display: block;
+      transition: all .3s; }
 
 .notes-list {
   background: #fafafa;

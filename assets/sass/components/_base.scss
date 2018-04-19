@@ -17,7 +17,7 @@ a:hover {
     text-decoration: none; // color:#333;
 }
 
-a:focus {
+:focus {
     outline: none;
 }
 
@@ -38,7 +38,7 @@ a:focus {
         .user>.info>span {
             color: #3C4858;
         }
-        .siderbar-bg {
+        .sidebar-bg {
             &:after {
                 background: #FFFFFF;
                 opacity: .93;
@@ -46,7 +46,7 @@ a:focus {
         }
     }
     &[data-background-color="black"] {
-        background-color: #191919;
+        background-color: #000;
         .logo,
         .nav {
             a {
@@ -61,7 +61,7 @@ a:focus {
         .user>.info>span {
             color: #fff;
         }
-        .siderbar-bg {
+        .sidebar-bg {
             &:after {
                 background: #000;
                 opacity: .8;
