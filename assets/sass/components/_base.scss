@@ -1,5 +1,14 @@
 html {
     font-weight: 300;
+    font-family: -apple-system,;
+    font-family: BlinkMacSystemFont;
+    font-family: "Segoe UI";
+    font-family: Roboto;
+    font-family: Oxygen-Sans;
+    font-family: Ubuntu;
+    font-family: Cantarell;
+    font-family: "Helvetica Neue";
+    
 }
 
 html,
@@ -128,4 +137,8 @@ a:hover {
     content:""; 
     display: block; 
     clear:both; 
+ }
+
+ .ps__rail-x:hover, .ps__rail-y:hover, .ps__rail-x:focus, .ps__rail-y:focus{
+    background-color: transparent;
  }
