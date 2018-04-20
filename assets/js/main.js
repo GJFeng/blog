@@ -50,6 +50,14 @@ $(function () {
             $sidebar.removeAttr("data-image","#");
         }
     })    
+    $(".notes .note-info").click(function(){
+        $(this).siblings().removeClass("active")
+        $(this).addClass("active")
+    })
+    $(".nav li").click(function(){
+        $(this).siblings().removeClass("active")
+        $(this).addClass("active")
+    })
 })
 blog={
     init:function(){
@@ -70,15 +78,13 @@ blog={
     initEditormd:function(){
         var testEditor = editormd("my-editormd", { //注意1：这里的就是上面的DIV的id属性值
             width: "100%",
-            height: '100%',
+            height: 'calc(100% - 60px)',
             syncScrolling: "single",
             path: "/node_modules/editor.md/lib/", //注意2：你的路径
             saveHTMLToTextarea: true, //注意3：这个配置，方便post提交表单
     
             toolbarIcons: function () {
-                return ["undo",
-                    "redo",
-                    "|",
+                return [
                     "bold",
                     "del",
                     "italic",
@@ -108,42 +114,41 @@ blog={
                     "pagebreak",
                     "|",
                     "goto-line",
-                    "watch",
-                    // "unwatch",
-                    "preview",
-                    "fullscreen",
+                   
                     "clear",
                     "search",
+                    "|",
+                    "watch",
+                    "preview",
+                    "fullscreen",
+                    
                     // "help",
                     // "info"
-                    "|",
-                    'save'
+                    "||",
+                    "undo",
+                    "redo",
+                    
+                    "save",
+                    "push"
                 ]
             },
             toolbarIconsClass: {
-                save: 'fa-star'
+                save: 'fa-floppy-o'
+            },
+            toolbarCustomIcons:{
+                push:'<a href="javascript:;" title="发布文章" unselectable="on" style="padding:0 10px;" class="editormd-push"><i class="fa fa-mail-forward" unselectable="on" style="display:inline-block"></i>发布文章</a>'
             },
             toolbarHandlers: {
-                save: function (cm, icon, cursor, selection) {
-                    console.log(cm)
-                    console.log(icon)
-                    console.log(cursor)
-                    console.log(selection)
-                    console.log(this.getHTML())
-                    $.ajax({
-                        type: 'POST',
-                        url: "/aa",
-                        data: {
-                            data: this.getHTML()
-                        },
-                        success: function (data) {
-                            console.log(data)
-                        }
-    
-                    })
-                }
+                save:function(cm, icon, cursor, selection){
+                    alert("存储")
+                },
+            },
+            onload : function() {
+                $(".editormd-menu .editormd-push").click(function(){
+                    alert("发布")
+
+                })
             }
-    
     
         });
         $('#btn').click(function () {

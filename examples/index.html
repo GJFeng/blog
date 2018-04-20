@@ -54,10 +54,7 @@
             <!-- <div class="sidebar-bg"></div> -->
         </aside>
         <div class="main clearfix">
-            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
-                <!-- hide-on-large-only -->
-                <i class="material-icons">menu</i>
-            </a>
+
             <div class="notes-list">
                 <div class="new-note">
                     <a href="">
@@ -140,10 +137,92 @@
 
                         </ul>
                     </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                        <a class='dropdown-trigger ' href='#' data-target='note-settings2'>
+                            <i class="material-icons">settings</i>
+                        </a>
+                        <ul id='note-settings2' class='dropdown-content'>
+                            <li class="note-move">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li class="note-del">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">delete</i>删除文章</a>
+                            </li>
 
+                        </ul>
+                    </li>
+                    <li class="note-info">
+                        <a href="javascript:;">
+                            <p class="note-title">文章标题</p>
+                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
+                            <p class="word-count">字数&nbsp;:&nbsp;
+                                <span>3000</span>
+                            </p>
+                        </a>
+                        <a class='dropdown-trigger ' href='#' data-target='note-settings3'>
+                            <i class="material-icons">settings</i>
+                        </a>
+                        <ul id='note-settings3' class='dropdown-content'>
+                            <li class="note-move">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li class="note-del">
+                                <a href="javascripe:;" class="grey-text text-darken-3">
+                                    <i class="material-icons">delete</i>删除文章</a>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div id="writer">
+            <div id="write">
+                <div class="write-header clearfix">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger ">
+                        <!-- hide-on-large-only -->
+                        <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                        <!-- <i class="material-icons visible-on-sidebar-mini">view_list</i> -->
+                    </a>
+                    <input type="text" class="write-title browser-default" value="文章标题">
+                </div>
+
                 <div id="my-editormd">
                     <textarea id="my-editormd-markdown-doc" name="my-editormd-markdown-doc" style="display:none;"></textarea>
                     <textarea id="my-editormd-html-code" name="my-editormd-html-code" style="display:none;"></textarea>
@@ -159,7 +238,7 @@
     <div class="fixed-plugin">
         <div class="dropdown show-dropdown" data-target="fixed-plugin">
             <a href="#">
-                <i class="fa fa-cog fa-2x"> </i>
+                <i class="material-icons small">settings</i>
             </a>
             <div class="dropdown-content" id="fixed-plugin">
                 <div class="header-title">Sidebar Filters</div>
@@ -203,24 +282,32 @@
                     </div>
                 </div>
                 <div class="header-title">Images</div>
-                <div class="adjustments-line" >
+                <div class="adjustments-line">
                     <ul class="switch-trigger img-holder clearfix">
                         <li class="active">
-                            <a href="javascript:;"><img src="/assets/img/sidebar-1.jpg" alt="" /></a>
+                            <a href="javascript:;">
+                                <img src="/assets/img/sidebar-1.jpg" alt="" />
+                            </a>
                         </li>
                         <li>
-                            <a href="javascript:;"><img src="/assets/img/sidebar-2.jpg" alt="" /></a>
+                            <a href="javascript:;">
+                                <img src="/assets/img/sidebar-2.jpg" alt="" />
+                            </a>
                         </li>
                         <li>
-                            <a href="javascript:;"><img src="/assets/img/sidebar-3.jpg" alt="" /></a>
+                            <a href="javascript:;">
+                                <img src="/assets/img/sidebar-3.jpg" alt="" />
+                            </a>
                         </li>
                         <li>
-                            <a href="javascript:;"><img src="/assets/img/sidebar-4.jpg" alt="" /></a>
+                            <a href="javascript:;">
+                                <img src="/assets/img/sidebar-4.jpg" alt="" />
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
 </body>
 

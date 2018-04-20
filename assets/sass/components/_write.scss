@@ -1,4 +1,4 @@
-#writer {
+#write {
     float: left;
     width: calc(100% - 220px);
     height: 100%; // position: relative;
@@ -43,5 +43,26 @@
         &>li {
             list-style-type: disc;
         }
+    }
+    input{
+        border-bottom: 1px solid #ddd !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+.write-header{
+    padding: 6px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #ddd;
+    .write-title{
+        font-size: 24px;
+        font-weight: 400;
+        float: left;
+        line-height: 39px;
+        padding-left: 20px;
+        border: none;
+        width: calc(100% - 60px);
+        color: #595959;
     }
 }
