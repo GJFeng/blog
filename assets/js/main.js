@@ -2,6 +2,7 @@ $(function () {
     blog.init();
     blog.checkSidebarImage();
     blog.initEditormd();
+    blog.initSortable();
     $sidebar = $('.sidebar');
     $sidebar_img_container=$sidebar.find(".sidebar-bg");
 
@@ -75,6 +76,7 @@ blog={
     
         });
     },
+
     initEditormd:function(){
         var testEditor = editormd("my-editormd", { //注意1：这里的就是上面的DIV的id属性值
             width: "100%",
@@ -177,5 +179,11 @@ blog={
             var sidebar_container = '<div class="sidebar-bg" style="background-image: url(' + image_src + ') "/>';
             $sidebar.append(sidebar_container);
         }
+    },
+    initSortable:function(){
+        var notes = document.getElementsByClassName('notes')[0];
+        Sortable.create(notes,{
+            animation: 150, 
+        });
     }
 }
