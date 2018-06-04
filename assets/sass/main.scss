@@ -3,9 +3,16 @@
 @import "components/variables";
 @import "components/material-icons";
 @import "components/base";
-@import "components/sidebar";
-@import "components/write";
-@import "components/plugin";
+
+// console
+@import "components/cp/sidebar";
+@import "components/cp/write";
+@import "components/cp/plugin";
+
+// cp
+@import "components/portal/header";
+@import "components/portal/main";
+@import "components/portal/aside";
 
 //extend
 @import "components/extend/cards";

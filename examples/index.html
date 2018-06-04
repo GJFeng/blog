@@ -8,314 +8,96 @@
     <title>Document</title>
     <link rel="stylesheet" href="/node_modules/materialize-css/dist/css/materialize.min.css">
     <link rel="stylesheet" href="/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="/node_modules/editor.md/css/editormd.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="perfect-scrollbar">
-
-    <div class="wrapper">
-        <aside class="sidenav sidebar sidenav-fixed" id="slide-out" data-active-color="red" data-background-color="black" data-image="/assets/img/sidebar-1.jpg">
-            <div class="logo">
-                <a href="javascript:;">
-                    Pro
+    <nav>
+        <div class="container clearfix">
+            <div class="logo brand-logo">
+                <a href="javacript:;">
+                    <!-- <img src="/assets/img/sample-1.jpg" alt=""> -->
+                    G JFeng
                 </a>
             </div>
-            <div class="sidebar-wrapper">
-                <div class="user">
-                    <div class="photo">
-                        <img src="/assets/img/sample-1.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <span>Pro</span>
-                    </div>
-                </div>
-                <ul class="nav">
-                    <li>
-                        <a href="javascript:;">
-                            <i class="iconfont icon-fasong2  small"></i>
-                            <p>列表</p>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="javascript:;">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:;">前端日记</a>
+                </li>
+                <li>
+                    <a href="javascript:;">自我介绍</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container clearfix">
+            <div class="wrapper">
+                <ul>
+                    <li class="note-list">
+                        <a href="javascript:;" class="n-img">
+                            <img src="/assets/img/sample-1.jpg" alt="">
                         </a>
+                        <div class="n-note">
+                            <header>
+                                <a href="javascript:;" class="n-type">视频教程</a>
+                                <a href="javascript:;" class="n-title">Go自学笔记-敢于拥抱，敢于超越
+                                    <span class="red-text accent-2">（第3章）</span>
+                                </a>
+                                <span class="n-sticky new red badge accent-2" data-badge-caption="置顶"></span>
+                            </header>
+                            <p class="n-meta">
+                                <time>
+                                    <i class="material-icons">access_time</i>2018-04-15</time>
+                                <span class="n-author">
+                                    <i class="material-icons">person</i>
+                                    <a href="javascript:;">技术胖</a>
+                                </span>
+                                <span class="n-pv">
+                                    <i class="material-icons">remove_red_eye</i>阅读(35883)
+                                </span>
+                                <a class="n-pc" href="javascript:;">
+                                    <i class="fa fa-comments-o"></i>评论(131)
+                                </a>
+                            </p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="iconfont icon-fasong2  small"></i>
-                            <p>列表</p>
+                    <li class="note-list">
+                        <a href="javascript:;" class="n-img">
+                            <img src="/assets/img/sample-1.jpg" alt="">
                         </a>
-                    </li>
-                    <li class="active">
-                        <a href="javascript:;">
-                            <i class=" iconfont icon-fasong2 small"></i>
-                            <p>列表</p>
-                        </a>
+                        <div class="n-note">
+                            <header>
+                                <a href="javascript:;" class="n-type">视频教程</a>
+                                <a href="javascript:;" class="n-title">Go自学笔记-敢于拥抱，敢于超越
+                                    <span class="red-text accent-2">（第3章）</span>
+                                </a>
+                                <span class="n-sticky new red badge accent-2" data-badge-caption="置顶"></span>
+                            </header>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <!-- <div class="sidebar-bg"></div> -->
-        </aside>
-        <div class="main clearfix">
-
-            <div class="notes-list">
-                <div class="new-note">
-                    <a href="javascript:;">
-                        <i>+</i>
-                        <span>新建文章</span>
-                    </a>
-                </div>
-                <ul class="notes">
-                    <li class="note-info active">
-                        <a href="javascript:;">
-                            <p class="note-title">文章标题1</p>
-                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
-                            <p class="word-count">字数&nbsp;:&nbsp;
-                                <span>3000</span>
-                            </p>
-                        </a>
-                        <a class='dropdown-trigger ' href='#' data-target='note-settings1'>
-                            <i class="material-icons">settings</i>
-                        </a>
-                        <ul id='note-settings1' class='dropdown-content'>
-                            <li class="note-move">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li class="note-del">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">delete</i>删除文章</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="note-info">
-                        <a href="javascript:;">
-                            <p class="note-title">文章标题2</p>
-                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
-                            <p class="word-count">字数&nbsp;:&nbsp;
-                                <span>3000</span>
-                            </p>
-                        </a>
-                        <a class='dropdown-trigger ' href='#' data-target='note-settings'>
-                            <i class="material-icons">settings</i>
-                        </a>
-                        <ul id='note-settings' class='dropdown-content'>
-                            <li class="note-move">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li class="note-del">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">delete</i>删除文章</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="note-info">
-                        <a href="javascript:;">
-                            <p class="note-title">文章标题3</p>
-                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
-                            <p class="word-count">字数&nbsp;:&nbsp;
-                                <span>3000</span>
-                            </p>
-                        </a>
-                        <a class='dropdown-trigger ' href='#' data-target='note-settings2'>
-                            <i class="material-icons">settings</i>
-                        </a>
-                        <ul id='note-settings2' class='dropdown-content'>
-                            <li class="note-move">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li class="note-del">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">delete</i>删除文章</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="note-info">
-                        <a href="javascript:;">
-                            <p class="note-title">文章标题4</p>
-                            <p class="note-abb truncate">Koa2是现在最流行的基于Node.js平台的web开发框架，它很小，</p>
-                            <p class="word-count">字数&nbsp;:&nbsp;
-                                <span>3000</span>
-                            </p>
-                        </a>
-                        <a class='dropdown-trigger ' href='#' data-target='note-settings3'>
-                            <i class="material-icons">settings</i>
-                        </a>
-                        <ul id='note-settings3' class='dropdown-content'>
-                            <li class="note-move">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">keyboard_arrow_left</i>移动文章</a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表列表列表列表列表列表列表列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                    <li class="divider" tabindex="-1"></li>
-                                    <li>
-                                        <a href="javascript:;" class="truncate grey-text text-darken-3">列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li class="note-del">
-                                <a href="javascripe:;" class="grey-text text-darken-3">
-                                    <i class="material-icons">delete</i>删除文章</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="write">
-                <div class="write-header clearfix">
-                    <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
-                        <!-- hide-on-large-only -->
-                        <i class="material-icons visible-on-sidebar-regular">more_vert</i>
-                        <!-- <i class="material-icons visible-on-sidebar-mini">view_list</i> -->
-                    </a>
-                    <input type="text" class="write-title browser-default" value="文章标题">
-                </div>
-
-                <div id="my-editormd">
-                    <textarea id="my-editormd-markdown-doc" name="my-editormd-markdown-doc" style="display:none;"></textarea>
-                    <textarea id="my-editormd-html-code" name="my-editormd-html-code" style="display:none;"></textarea>
-                </div>
-
-            </div>
-            <footer>
-                <div class=""></div>
-
-            </footer>
+            <aside>
+                333
+            </aside>
         </div>
-    </div>
-    <div class="fixed-plugin">
-        <div class="dropdown show-dropdown" data-target="fixed-plugin">
-            <a href="#">
-                <i class="material-icons small">settings</i>
-            </a>
-            <div class="dropdown-content" id="fixed-plugin">
-                <div class="header-title">Sidebar Filters</div>
-                <div class="adjustments-line">
-                    <ul class="switch-trigger active-color">
-                        <li class="badge filter badge-purple" data-color="purple"></li>
-                        <li class="badge filter badge-blue" data-color="blue"></li>
-                        <li class="badge filter badge-green" data-color="green"></li>
-                        <li class="badge filter badge-orange" data-color="orange"></li>
-                        <li class="badge filter badge-red active" data-color="red"></li>
-                        <li class="badge filter badge-rose" data-color="rose"></li>
-                    </ul>
-                </div>
-                <div class="header-title">Sidebar Background</div>
-                <div class="adjustments-line">
-                    <ul class="switch-trigger background-color">
-                        <li class="badge filter badge-white" data-color="white"></li>
-                        <li class="badge filter badge-black active" data-color="black"></li>
-                    </ul>
-                </div>
-                <!-- <div class="adjustments-line">
-                    <div class="switch-trigger clearfix">
-                        <p>Sidebar Mini</p>
-                        <div class="switch switch-sidebar-mini">
-                            <label>
-                                <input type="checkbox" unchecked="">
-                                <span class="lever"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="adjustments-line">
-                    <div class="switch-trigger clearfix">
-                        <p>Sidebar Image</p>
-                        <div class="switch switch-sidebar-image">
-                            <label>
-                                <input type="checkbox" checked="">
-                                <span class="lever"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-title">Images</div>
-                <div class="adjustments-line">
-                    <ul class="switch-trigger img-holder clearfix">
-                        <li class="active">
-                            <a href="javascript:;">
-                                <img src="/assets/img/sidebar-1.jpg" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="/assets/img/sidebar-2.jpg" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="/assets/img/sidebar-3.jpg" alt="" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="/assets/img/sidebar-4.jpg" alt="" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+
+    </main>
+    <footer>
+        <div class="container">
+
         </div>
-    </div>
+    </footer>
 </body>
 
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-<script src="/node_modules/editor.md/editormd.min.js"></script>
 <script src="/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-<script src="/node_modules/sortablejs/Sortable.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<!-- <script src="/assets/js/main.js"></script> -->
 
 </html>

@@ -101,7 +101,7 @@
             &:first-child>a {
                 margin: 0 15px;
             }
-            &:hover {
+            &:not(.active):hover {
                 a {
                     background-color: rgba(200, 200, 200, 0.2);
                     box-shadow: none;

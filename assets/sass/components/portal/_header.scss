@@ -1,0 +1,13 @@
+nav{
+    background:#fff;
+    margin-bottom:15px;
+    a{
+        color: $a-color !important;
+    }
+    .logo{
+        img{
+            width: 32px;
+            display: inline-block;
+        }
+    }
+}

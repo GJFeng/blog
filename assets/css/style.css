@@ -21,22 +21,25 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
 
-html {
-  font-weight: 300;
-  font-family: -apple-system;
-  font-family: BlinkMacSystemFont;
-  font-family: "Segoe UI";
-  font-family: Roboto;
-  font-family: Oxygen-Sans;
-  font-family: Ubuntu;
-  font-family: Cantarell;
-  font-family: "Helvetica Neue"; }
-
+/* html {
+    font-weight: 300;
+    font-family: -apple-system, ;
+    font-family: BlinkMacSystemFont;
+    font-family: "Segoe UI";
+    font-family: Roboto;
+    font-family: Oxygen-Sans;
+    font-family: Ubuntu;
+    font-family: Cantarell;
+    font-family: "Helvetica Neue";
+} */
 html,
 body,
 .wrapper,
 .main {
   height: 100%; }
+
+body {
+  background-color: #f6f6f6; }
 
 a {
   color: #555; }
@@ -47,16 +50,19 @@ a:hover {
 :focus {
   outline: none; }
 
+ul, li {
+  margin: 0; }
+
 .sidebar[data-background-color="white"] {
   background-color: #fff; }
   .sidebar[data-background-color="white"] .logo a,
   .sidebar[data-background-color="white"] .nav a {
-    color: #3C4858; }
-  .sidebar[data-background-color="white"] .logo li:hover > a,
-  .sidebar[data-background-color="white"] .nav li:hover > a {
-    color: #3C4858; }
+    color: #555; }
+  .sidebar[data-background-color="white"] .logo li:not(.active):hover > a,
+  .sidebar[data-background-color="white"] .nav li:not(.active):hover > a {
+    color: #555; }
   .sidebar[data-background-color="white"] .user > .info > span {
-    color: #3C4858; }
+    color: #555; }
   .sidebar[data-background-color="white"] .sidebar-bg:after {
     background: #FFFFFF;
     opacity: .93; }
@@ -65,8 +71,8 @@ a:hover {
   .sidebar[data-background-color="black"] .logo a,
   .sidebar[data-background-color="black"] .nav a {
     color: #fff; }
-  .sidebar[data-background-color="black"] .logo li:hover > a,
-  .sidebar[data-background-color="black"] .nav li:hover > a {
+  .sidebar[data-background-color="black"] .logo li:not(.active):hover > a,
+  .sidebar[data-background-color="black"] .nav li:not(.active):hover > a {
     color: #fff; }
   .sidebar[data-background-color="black"] .user > .info > span {
     color: #fff; }
@@ -121,9 +127,31 @@ a:hover {
   display: block;
   clear: both; }
 
-.ps__rail-x:hover, .ps__rail-y:hover, .ps__rail-x:focus, .ps__rail-y:focus {
+.ps__rail-x:hover,
+.ps__rail-y:hover,
+.ps__rail-x:focus,
+.ps__rail-y:focus {
   background-color: transparent; }
 
+@media only screen and (min-width: 601px) {
+  .container {
+    width: auto; } }
+@media only screen and (min-width: 993px) {
+  .container {
+    width: auto; } }
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 1280px; } }
+@media only screen and (max-width: 1310px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px; } }
+@media only screen and (max-width: 993px) {
+  aside {
+    display: none; }
+
+  main .wrapper {
+    width: 100% !important; } }
 .main {
   padding-left: 260px; }
 
@@ -200,7 +228,7 @@ a:hover {
       white-space: nowrap; }
   .sidebar .nav li:first-child > a {
     margin: 0 15px; }
-  .sidebar .nav li:hover a {
+  .sidebar .nav li:not(.active):hover a {
     background-color: rgba(200, 200, 200, 0.2);
     box-shadow: none; }
   .sidebar .nav li.active a {
@@ -888,6 +916,79 @@ a:hover {
     border-radius: 0;
     width: 100%;
     height: 100px; }
+
+nav {
+  background: #fff;
+  margin-bottom: 15px; }
+  nav a {
+    color: #555 !important; }
+  nav .logo img {
+    width: 32px;
+    display: inline-block; }
+
+main .wrapper {
+  width: calc(100% - 400px);
+  float: left; }
+  main .wrapper .note-list {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    border-bottom: none; }
+  main .wrapper .note-list:first-child {
+    border-radius: 4px 4px 0 0; }
+  main .wrapper .note-list:last-child {
+    border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid #eaeaea; }
+  main .wrapper .n-img {
+    float: left;
+    margin-right: 15px; }
+    main .wrapper .n-img > img {
+      width: 220px;
+      height: 150px;
+      display: block; }
+  main .wrapper .n-note {
+    float: left;
+    width: calc(100% - 235px); }
+    main .wrapper .n-note header {
+      overflow: hidden;
+      font-size: 0; }
+  main .wrapper .n-title {
+    font-size: 18px;
+    line-height: 24px; }
+    main .wrapper .n-title > span {
+      font-weight: 600; }
+  main .wrapper .n-sticky {
+    font-size: 12px;
+    margin-top: 1px;
+    float: none;
+    display: inline-block; }
+  main .wrapper .n-type {
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+    background-color: #8AC78F;
+    position: relative;
+    margin-right: 6px;
+    padding: 0 6px;
+    display: inline-block; }
+    main .wrapper .n-type:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      right: -4px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      vertical-align: middle;
+      border-left: 4px solid #8AC78F;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent; }
+
+aside {
+  float: right;
+  width: 380px; }
 
 .card.narrower {
   display: inline-block; }
